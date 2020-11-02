@@ -42,6 +42,7 @@ services:
   muxy:
     image: mefellows/muxy:v0.0.5
     hostname: muxy
+    privileged: true
     volumes:
       - ./../config:/opt/muxy/conf/:ro
     networks:
